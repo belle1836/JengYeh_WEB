@@ -78,7 +78,17 @@
               
     <div style="color: #33ccff;text - align: center;">
       <marquee width=" auto" behavior="scroll" bgcolor="#000000" size=" 1000" direction="left" align="middle" style="font-size: 2vw;">
-        網路是人們偉大的老師，提共我們許多資訊，讓我們的世界更加方便，但是也不能過度使用，希望大家可以好好使用
+        <div id="timeDisplay" style="font-size: auto; color: #f7f5f5;">
+        </div>
+        <script>
+          setInterval(() => {
+            const now =new Date();
+            document.getElementById("timeDisplay").innerText ="現在時間:"+ now.toLocaleTimeString();
+          },1000);
+            
+        </script>
+    ｌ
+  
       </marquee>
         
       <h1 class='title'>莊筠媗的網站</h1>
